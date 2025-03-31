@@ -1,20 +1,44 @@
-
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
         <title>Ozymandias Knight Artstation</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script> 
     </head>
     <body>
         <div class="band">
-            <div class="type-selection">
-                <div>Videos</div>
+            <span>Ozymandias Knight</span>
+            <div class="type-selection" id="type_switch">
+                <div class="type_tab">Videos</div>
                 <div>Images</div>
             </div>
         </div>
 
+        <div class="image-selection" id="selection_image">
+            <div class="image_card">
+                <img src="images/Cloud.png">
+            </div>
+            <div class="image_card">
+                <img src="images/KatanaClouds.png">
+            </div>
+            <div class="image_card">
+                <img src="images/CrownOnTheFloor.png">
+            </div>
+            <div class="image_card">
+                <img src="images/MoonSakuraTorii.png">
+            </div>
+            <div class="image_card">
+                <img src="images/Suzume.png">
+            </div>
+            <div class="image_card">
+                <img src="images/Headphones.png">
+            </div>
+        </div>
 
-        <div class="video-selection">
+        <div class="video-selection" id="selection_video">
             <div class="video_player">
                 <video src="videos/RockPop.mp4" class="video"></video>
             </div>
@@ -24,6 +48,7 @@
             <div class="video_player">
                 <video src="videos/Open.mp4" class="video"></video>
             </div>
+
         </div>
 
         

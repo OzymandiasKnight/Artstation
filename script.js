@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
 
+function generate_videos_frames() {
     var video_players = document.getElementsByClassName("video_player");
     for (let i=0; i < video_players.length; i++) {
-        console.log("a");
         video_player = video_players[i];
         const videoControls = document.createElement("div");
         videoControls.className = "video_controls";
@@ -62,5 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
             replayButton.hidden = false;
         });
     };
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    generate_videos_frames();
+    var type_switch = document.getElementById("type_switch");
+    var selection_image = document.getElementById("selection_image");
+    selection_image.classList.add("hidden");
+
+    type_switch.addEventListener("click", () => {
+        var selection_video = document.getElementById("selection_video");
+        selection_image.classList.toggle("hidden");
+        selection_video.classList.toggle("hidden");
+        type_switch.children[0].classList.toggle("type_tab");
+        type_switch.children[1].classList.toggle("type_tab");
+
+    });
 
 });
