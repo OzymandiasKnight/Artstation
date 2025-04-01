@@ -59,9 +59,8 @@ body {
     background-color: var(--c-secondary);
     border: solid 1px var(--c-main);
     border-radius: 12px;
-    padding: 24px;
-    user-select: none;
     padding: 20px;
+    user-select: none;
 }
 
 .type-selection > .type_tab {
@@ -105,12 +104,19 @@ body {
 }
 
 .control_play {
+    transition: 0.2s;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     scale: 2.0;
+}
+
+.control_play:hover {
+    transition: 0.2s;
+    scale: 2.2;
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .image-selection {
@@ -126,6 +132,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 .image_card > img {
     position: relative;
